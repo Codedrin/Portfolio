@@ -1,29 +1,19 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { iFlood, cstc, Jblas, DICT, gl, embem} from "../assets/images";
 import {
-    car,
     contact,
     css,
-    estate,
-    express,
     git,
     github,
     html,
     javascript,
     linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
+    php,
+    bootstrap,
+    sql,
     nodejs,
-    pricewise,
     react,
-    redux,
     sass,
-    snapgram,
-    summiz,
     tailwindcss,
-    threads,
-    typescript
 } from "../assets/icons";
 
 export const skills = [
@@ -31,11 +21,6 @@ export const skills = [
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
     },
     {
         imageUrl: git,
@@ -58,24 +43,14 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
+        imageUrl: sql,
+        name: "sql",
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
+        imageUrl: php,
+        name: "php",
+        type: "backend",
     },
     {
         imageUrl: nodejs,
@@ -88,78 +63,32 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
         imageUrl: sass,
         name: "Sass",
+        type: "Frontend",
+    },
+    {
+        imageUrl: bootstrap,
+        name: "bootstrap",
         type: "Frontend",
     },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
     }
 ];
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Contractual Freelance Web Developer",
+        company_name: "College of Sciences Technology and Communication Inc.",
+        icon: cstc,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "February 2024 - April 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developing college student business solution projects through their vision and creativity to innovate the business processes of their sector.",
+            "Collaborating with fellow batchmate teams that specialize in front-end and back-end development.",
         ],
     },
 ];
@@ -173,56 +102,71 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/Codedrin',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/aldrin-rosales-8b277b228/',
     }
 ];
 
 export const projects = [
     {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
+        iconUrl: iFlood,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+        name: 'iFlood',
+        description: 'Developed IoT-based Web Flood Monitoring system with SMS notification that aims to monitor flood status, temperature, humidiy and wind speed of the flood prone areas.',
+        link: 'https://iflood.online/?fbclid=IwAR1vMhweouX54ltEUrFWGQHZ_vhKFm7FTxYTxsENFlGfv2A-mg_OUZlTaqY',
     },
     {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        iconUrl: Jblas,
+        theme: 'btn-back-blue',
+        name: 'JBLAS',
+        description: 'Developed a responsive Booking Management System Website for Home Renivations and Repair Services',
+        link: 'https://jblashomerenovation.shop/',
     },
     {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+        iconUrl: embem,
+        theme: 'btn-back-blue',
+        name: 'Embem',
+        description: 'Developed a IoT base Coin Operated Vending machine Web Application',
+        link: 'https://embem-webapp.netlify.app/',
     }
+];
+
+
+export const certifications = [
+    {
+        title: "Front-end Development HTML",
+        sub_title: "Through this course, I gained valuable insights and lessons that have shaped my understanding of HTML, the foundation of web development.",
+        issuer: "Great Learning Academy",
+        company_name: "Great Learning Academy" ,
+        icon: gl,
+        iconBg: "#accbe1",
+        date: "March 2024 - present",
+        points: [
+            "Understanding HTML's Features as the backbone of web development, providing structure and organization to web pages. I learned about its features, including its ability to incorporate various media types, create interactive elements, and ensure accessibility for all users.",
+            "Mastering HTML Editing Through hands-on exercises and projects, I honed my skills in using HTML editors effectively. These tools, such as Visual Studio Code and Sublime Text, provided essential features like syntax highlighting and code completion, enhancing my coding efficiency.Outlined the various features of HTML",
+            "Grasping the HTML Skeleton Learning to build an HTML skeleton was fundamental. It taught me the essential elements of an HTML document, including the doctype declaration, <html>, <head>, and <body> tags. Understanding this structure laid the groundwork for creating fully functional web pages.",
+            "Harnessing Comments for Clarity that plays a crucial role in code documentation. Through incorporating comments strategically within my HTML code, I could provide explanations, document code segments, and improve collaboration with teammates.",
+            "Embracing HTML Elements and Tags HTML elements are the building blocks of web pages, and mastering them was pivotal. From headings and paragraphs to images and links, each element serves a specific purpose in creating rich and engaging content.",
+            "Utilizing Basic Tags Effectively Basic HTML tags are the bread and butter of web development. Understanding their usage, such as <h1> for headings and <p> for paragraphs, enabled me to structure content effectively and maintain semantic markup.",
+            "Harnessing the Power of Attributes that provides additional information and functionality to HTML elements. Learning to use attributes like href, src, and class allowed me to enhance the behavior and appearance of elements, making my web pages more dynamic and interactive."
+        ],
+    },
+    {
+        title: "Principles of Web Development and Introduction to HTML",
+        sub_title: "This course is designed to start your journey in web development and design, no matter how little experience or technical knowledge you currently have. There is so much to explore on the web and if you are the typical internet user, you probably visit several websites every day, whether for business, entertainment, or education. But have you ever wondered how these websites actually work? How are they built? How do browsers, computers, and mobile devices interact with the web? What skills are necessary to build a website?",
+        issuer: "Department of Information And Communications Technology",
+        company_name: "Republic of the Philippines | Department of Information And Communications Technology" ,
+        icon: DICT,
+        iconBg: "#accbe1",
+        date: "March 2024 - present",
+        points: [
+            "Recognize the definition of web development and website development life cycle",
+            "Analyze HTML and HTML5 and its purposes",
+            "Demonstrate skills in reading and writing in HTML5 documents."
+        ],
+    },
 ];

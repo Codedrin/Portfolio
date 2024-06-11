@@ -1,15 +1,25 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
-import sakura from "../assets/sakura.mp3";
+import konohapeace from "../assets/konohapeace.mp3";
+import planesound from "../assets/planesound.mp3";
+import wingsflap from "../assets/wingsflap.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
-  audioRef.current.volume = 0.4;
-  audioRef.current.loop = true;
+  const konohaAudioRef = useRef(new Audio(konohapeace));
+  konohaAudioRef.current.volume = 0.4;
+  konohaAudioRef.current.loop = true;
+
+  const planeAudioRef = useRef(new Audio(planesound));
+  planeAudioRef.current.volume = 0.1;
+  planeAudioRef.current.loop = true;
+
+  const wingsflapAudioRef = useRef(new Audio(wingsflap));
+  wingsflapAudioRef.current.volume = 0.4;
+  wingsflapAudioRef.current.loop = true;
 
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
@@ -17,11 +27,19 @@ const Home = () => {
 
   useEffect(() => {
     if (isPlayingMusic) {
-      audioRef.current.play();
+      konohaAudioRef.current.play();
+      planeAudioRef.current.play();
+      wingsflapAudioRef.current.play();
+    } else {
+      konohaAudioRef.current.pause();
+      planeAudioRef.current.pause();
+      wingsflapAudioRef.current.pause();
     }
 
     return () => {
-      audioRef.current.pause();
+      konohaAudioRef.current.pause();
+      planeAudioRef.current.pause();
+      wingsflapAudioRef.current.pause();
     };
   }, [isPlayingMusic]);
 
@@ -85,7 +103,7 @@ const Home = () => {
             intensity={1}
           />
 
-          <Bird />
+          <Bird wingsFlapAudio={wingsflapAudioRef} />
           <Sky isRotating={isRotating} />
           <Island
             isRotating={isRotating}

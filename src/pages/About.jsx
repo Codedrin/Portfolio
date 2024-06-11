@@ -4,7 +4,7 @@ import {
 } from "react-vertical-timeline-component";
 
 import { CTA } from "../components";
-import { experiences, skills } from "../constants";
+import { experiences, skills, certifications } from "../constants";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -15,15 +15,15 @@ const About = () => {
         Hello, I'm{" "}
         <span className='blue-gradient_text font-semibold drop-shadow'>
           {" "}
-          Adrian
+          Aldrin
         </span>{" "}
         👋
       </h1>
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          BSIT undergraduate student that seeking for internship on designing and coding in building different
+          Web-Based projects.
         </p>
       </div>
 
@@ -47,10 +47,10 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Work Experience</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I've worked with all sorts of companies, leveling up my skills and
+            I've worked with all sorts of projects through my freelancing career, leveling up my skills and
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
@@ -103,6 +103,75 @@ const About = () => {
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
+          
+        </div>
+      </div>
+
+      <hr className='border-slate-200' />
+
+      
+      <div className='py-16'>
+        <h3 className='subhead-text'>Certifications</h3>
+        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+          <p>
+          Enrolling in various courses has been instrumental in my journey to improve my proficiency in web development. These courses have provided structured learning experiences, covering a wide range of topics and concepts essential for
+           mastering the craft. Through hands-on exercises, projects, and interactive tutorials, 
+           I've had the opportunity to deepen my understanding of HTML, CSS, JavaScript, and other key technologies used in web development. 
+          </p>
+        </div>
+
+        <div className='mt-12 flex'>
+          <VerticalTimeline>
+            {certifications.map((certificates, index) => (
+              <VerticalTimelineElement
+              key={certificates.company_name}
+                sub_title={certificates.sub_title}
+                issuer={certificates.issuer}
+                date={certificates.date}
+               company_name = {certificates.company_name}
+                iconStyle={{ background: certificates.iconBg }}
+                icon={
+                  <div className='flex justify-center items-center w-full h-full'>
+                    <img
+                      src={certificates.icon}
+                      alt={certificates.company_name}
+                      className='w-[60%] h-[60%] object-contain'
+                    />
+                  </div>
+                }
+                contentStyle={{
+                  borderBottom: "8px",
+                  borderStyle: "solid",
+                  borderBottomColor: certificates.iconBg,
+                  boxShadow: "none",
+                }}
+              >
+                <div>
+                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                    {certificates.title}
+                  </h3>
+                  <p
+                    className='text-black-500 font-medium text-base'
+                    style={{ margin: 0 }}
+                  >
+                    {certificates.company_name}
+                  </p>
+                </div>
+
+                <ul className='my-5 list-disc ml-5 space-y-2'>
+                  {certificates.points.map((point, index) => (
+                    <li
+                      key={`experience-point-${index}`}
+                      className='text-black-500/50 font-normal pl-1 text-sm'
+                    >
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+          
         </div>
       </div>
 
@@ -110,6 +179,7 @@ const About = () => {
 
       <CTA />
     </section>
+
   );
 };
 

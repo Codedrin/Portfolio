@@ -8,10 +8,9 @@ const Footer = () => {
       <hr className='border-slate-200' />
 
       <div className='footer-container'>
-        <p>
-          © 2023 <strong>Adrian Hajdin</strong>. All rights reserved.
+      <p>
+           2024 <strong>Aldrin Rosales</strong>
         </p>
-
         <div className='flex gap-3 justify-center items-center'>
           {socialLinks.map((link) => (
             <Link key={link.name} to={link.link} target='_blank'>
@@ -23,6 +22,8 @@ const Footer = () => {
             </Link>
           ))}
         </div>
+     
+   
       </div>
     </footer>
   );
