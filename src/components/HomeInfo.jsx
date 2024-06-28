@@ -18,7 +18,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-        Undergraduate  BSIT student <br /> on College of Science Technology and Communication Inc. that seeking for internship
+       BSIT Graduate <br /> on College of Science Technology and Communication Inc. that seeking for Job opportunity
         to pursue my passion in coding and designing a modern Web-based projects.
         </p>
 

@@ -22,7 +22,7 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          BSIT undergraduate student that seeking for internship on designing and coding in building different
+          BSIT  graduate that seeking for Opportunity to grown and enhance my skills on designing and coding in building different
           Web-Based projects.
         </p>
       </div>

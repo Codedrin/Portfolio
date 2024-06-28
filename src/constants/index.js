@@ -1,4 +1,4 @@
-import { iFlood, cstc, Jblas, DICT, gl, embem} from "../assets/images";
+import { iFlood, cstc, Jblas,infoman, DICT, gl, embem, } from "../assets/images";
 import {
     contact,
     css,
@@ -91,6 +91,18 @@ export const experiences = [
             "Collaborating with fellow batchmate teams that specialize in front-end and back-end development.",
         ],
     },
+    {
+        title: "IT Support Technician (Intern)",
+        company_name: "Information Managers Inc. (Infoman)",
+        icon: infoman,
+        iconBg: "#accbe1",
+        date: "April 2024 - August 2024",
+        points: [
+            "Pc Troubleshooting",
+            "Software Tester",
+            "Network Trouble Shooting"
+        ],
+    }
 ];
 
 export const socialLinks = [
