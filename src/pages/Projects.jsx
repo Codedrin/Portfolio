@@ -15,11 +15,11 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-      I'm a BSIT college student who engages
+      I'm a BSIT graduated who engages
       in various business solution projects, assisting fellow
       students in transforming their visions into innovative ventures.
       </p>
-
+g
       <div className='flex flex-wrap my-20 gap-16'>
         {projects.map((project) => (
           <div className='lg:w-[400px] w-full' key={project.name}>
