@@ -103,7 +103,7 @@ export const experiences = [
         company_name: "GPTechs",
         icon: build_dev,
         iconBg: "#accbe1",
-        date: "February 2024 - April 2024",
+        date: "February 2024 - August 2024",
         points: [
             "Created plans and communicated deadlines to complete projects on time.",
             "Produced content for websites and social media channels to enhance brand visibility.",
