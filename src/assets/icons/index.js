@@ -15,9 +15,14 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
-
+import mongoDB from './mongoDB.svg'
+import firebase from './firebase.svg'
+import express from './express.svg'
 export {
     react,
+    mongoDB,
+    express,
+    firebase,
     css,
     git,
     github,

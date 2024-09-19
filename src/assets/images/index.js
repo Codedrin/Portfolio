@@ -7,6 +7,7 @@ import gl from './gl.png'
 import infoman from './infoman.png'
 import embem from './embem.png'
 import  freecodecamp from './freecodecamp.jpg'
+import build_dev from './build_dev.png'
 export {
     cstc,
     iFlood,
@@ -15,5 +16,7 @@ export {
     freecodecamp,
     Jblas,
     embem,
-    infoman
+    infoman,
+    build_dev
+
 }

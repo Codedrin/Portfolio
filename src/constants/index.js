@@ -1,6 +1,9 @@
-import { iFlood, cstc, Jblas,infoman, DICT, gl, embem, } from "../assets/images";
+import { iFlood,  build_dev, Jblas,infoman, DICT, gl, embem, } from "../assets/images";
 import {
     contact,
+    mongoDB,
+    express,
+    firebase,
     css,
     git,
     github,
@@ -26,6 +29,21 @@ export const skills = [
         imageUrl: git,
         name: "Git",
         type: "Version Control",
+    },
+    {
+        imageUrl: mongoDB,
+        name: "mongoDB",
+        type: "Non Relational Database",
+    },
+    {
+        imageUrl: express,
+        name: "express",
+        type: "Backend",
+    },
+    {
+        imageUrl: firebase,
+        name: "firebase",
+        type: "Database",
     },
     {
         imageUrl: github,
@@ -81,26 +99,31 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "Contractual Freelance Web Developer",
-        company_name: "College of Sciences Technology and Communication Inc.",
-        icon: cstc,
+        title: "Web Developer",
+        company_name: "GPTechs",
+        icon: build_dev,
         iconBg: "#accbe1",
         date: "February 2024 - April 2024",
         points: [
-            "Developing college student business solution projects through their vision and creativity to innovate the business processes of their sector.",
-            "Collaborating with fellow batchmate teams that specialize in front-end and back-end development.",
+            "Created plans and communicated deadlines to complete projects on time.",
+            "Produced content for websites and social media channels to enhance brand visibility.",
+            "Collaborated with team members to achieve target results.",
+            "Engaged with customers to better understand needs and deliver excellent service."
         ],
     },
     {
-        title: "IT Support Technician (Intern)",
+        title: "Software Tester and Network Support Technician (Intern)",
         company_name: "Information Managers Inc. (Infoman)",
         icon: infoman,
         iconBg: "#accbe1",
         date: "April 2024 - August 2024",
-        points: [
-            "Pc Troubleshooting",
-            "Software Tester",
-            "Network Trouble Shooting"
+        points: [   
+            "Wrote detailed test scenarios and cases, accurately logging errors and defects in comprehensive test reports.",
+            "Conducted quality testing on projects and issues according to strict processes and timescales.",
+            "Monitored network performance, identified bottlenecks, and implemented enhancements to improve speed and reliability.",
+            "Maintained up-to-date documentation of network configurations, changes, and inventory for compliance and troubleshooting purposes.",
+            "Troubleshot and resolved network issues, minimising downtime and maintaining productivity across all departments.",
+            "Installed and configured network hardware, including routers, switches, and firewalls, to support company operations."
         ],
     }
 ];
