@@ -1,68 +1,51 @@
-import { Link } from "react-router-dom";
-
 import { CTA } from "../components";
 import { projects } from "../constants";
-import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
-    <section className='max-container'>
-      <h1 className='head-text'>
+    <section className="max-container">
+      <h1 className="head-text text-center">
         My{" "}
-        <span className='blue-gradient_text drop-shadow font-semibold'>
+        <span className="blue-gradient_text drop-shadow font-extrabold">
           Projects
         </span>
       </h1>
-      
-      <p className='text-slate-500 mt-2 leading-relaxed'>
-      I'm a BSIT graduated who engages
-      in various business solution projects, assisting fellow
-      students in transforming their visions into innovative ventures.
+
+      <p className="text-slate-500 mt-4 leading-relaxed text-center">
+        I love creating solutions to real-world problems! Here are some of my
+        exciting projects designed with passion and innovation.
       </p>
 
-      <div className='flex flex-wrap my-20 gap-16'>
+      {/* Fun & Interactive Cards */}
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 my-16">
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
-            <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
-                <img
-                  src={project.iconUrl}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
-                />
-              </div>
+          <div
+            key={project.name}
+            onClick={() => window.open(project.link, "_blank")}
+            className="relative bg-gradient-to-tr from-blue-500 to-purple-500 rounded-xl shadow-xl p-6 cursor-pointer hover:shadow-2xl hover:scale-105 transform transition duration-500"
+          >
+            {/* Glow Effect */}
+            <div className="absolute inset-0 blur-lg opacity-30 rounded-xl bg-gradient-to-tr from-blue-500 to-purple-500 -z-10"></div>
+
+            {/* Icon */}
+            <div className="w-16 h-16 flex justify-center items-center rounded-full mx-auto bg-white transform hover:scale-125 transition duration-300">
+              <img
+                src={project.iconUrl}
+                alt={project.name}
+                className="w-10 h-10 object-contain animate-bounce"
+              />
             </div>
 
-            <div className='mt-5 flex flex-col'>
-              <h4 className='text-2xl font-poppins font-semibold'>
-                {project.name}
-              </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
-              <div className='mt-5 flex items-center gap-2 font-poppins'>
-                <Link
-                  to={project.link}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
-                >
-                  Live Link
-                </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
-              </div>
+            {/* Content */}
+            <div className="text-center mt-6 text-white">
+              <h4 className="text-2xl font-bold">{project.name}</h4>
+              <p className="mt-3 text-sm leading-relaxed font-light">
+                {project.description}
+              </p>
             </div>
           </div>
-          
         ))}
-        
       </div>
-      
-
-      <hr className='border-slate-200' />
 
       <CTA />
     </section>

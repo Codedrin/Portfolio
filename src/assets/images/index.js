@@ -8,6 +8,11 @@ import infoman from './infoman.png'
 import embem from './embem.png'
 import  freecodecamp from './freecodecamp.jpg'
 import build_dev from './build_dev.png'
+import Cnx from './Concentrix.jpg'
+import princeTech from './princeTech.png'
+import eunivate from './eunivate.png'
+import puyobay from './puyobay.png'
+
 export {
     cstc,
     iFlood,
@@ -17,6 +22,10 @@ export {
     Jblas,
     embem,
     infoman,
+    puyobay,
+    eunivate,
+    princeTech,
+    Cnx,
     build_dev
 
 }

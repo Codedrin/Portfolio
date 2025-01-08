@@ -1,4 +1,4 @@
-import { iFlood,  build_dev, Jblas,infoman, DICT, gl, embem, } from "../assets/images";
+import { iFlood,  build_dev, Jblas,infoman, DICT, gl, embem, Cnx , eunivate, puyobay, princeTech} from "../assets/images";
 import {
     contact,
     mongoDB,
@@ -14,6 +14,7 @@ import {
     bootstrap,
     sql,
     nodejs,
+    wordpress,
     react,
     sass,
     tailwindcss,
@@ -34,6 +35,11 @@ export const skills = [
         imageUrl: mongoDB,
         name: "mongoDB",
         type: "Non Relational Database",
+    },
+    {
+        imageUrl: wordpress,
+        name: "wordpress",
+        type: "Content Management System",  
     },
     {
         imageUrl: express,
@@ -99,6 +105,21 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Customer Service Representative",
+        company_name: "Concentrix",
+        icon: Cnx,
+        iconBg: "#accbe1",
+        date: "November 2024 - January 2025",
+        points: [
+            "Supportinng Customer with their order issues",
+            "Handle Global Selling Ecommerce Account",
+            "Esccalate unfamiliar issues to higher departments",
+            "Engaged with customers to better understand needs and deliver excellent service."
+        ],
+    },
+
+
+    {
         title: "Web Developer",
         company_name: "GPTechs",
         icon: build_dev,
@@ -111,6 +132,7 @@ export const experiences = [
             "Engaged with customers to better understand needs and deliver excellent service."
         ],
     },
+
     {
         title: "Software Tester and Network Support Technician (Intern)",
         company_name: "Information Managers Inc. (Infoman)",
@@ -167,6 +189,26 @@ export const projects = [
         name: 'Embem',
         description: 'Developed a IoT base Coin Operated Vending machine Web Application',
         link: 'https://embem-webapp.netlify.app/',
+    },
+    {
+        iconUrl: eunivate,
+        theme: 'btn-back-blue',
+        name: 'eunivate',
+        description: 'Developed a Project management tool system',
+        link: 'https://www.eunivate.com/',
+    },
+    {
+        iconUrl: puyobay,
+        theme: 'btn-back-blue',
+        name: 'Puyobay',
+        description: 'Developed a rental and booking management system for aprtment and house',
+        link: 'https://www.puyobay.com/',
+    },    {
+        iconUrl: princeTech,
+        theme: 'btn-back-blue',
+        name: 'princeTech',
+        description: 'Developed wordpress UI design for corporate business',
+        link: 'https://aldrin609.wordpress.com/?_gl=1*roum6s*_gcl_au*MTI3MDA5ODI0Mi4xNzM2MzIzMjgw',
     }
 ];
 

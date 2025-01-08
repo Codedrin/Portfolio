@@ -18,6 +18,8 @@ import soundoff from './soundoff.png'
 import mongoDB from './mongoDB.svg'
 import firebase from './firebase.svg'
 import express from './express.svg'
+import wordpress from "./wordpress.svg"
+
 export {
     react,
     mongoDB,
@@ -35,6 +37,7 @@ export {
     sass,
     tailwindcss,
     linkedin,
+    wordpress,
     arrow,
     contact,
     soundon,
