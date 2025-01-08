@@ -121,7 +121,7 @@ export const experiences = [
 
     {
         title: "Web Developer",
-        company_name: "GPTechs",
+        company_name: "Freelance",
         icon: build_dev,
         iconBg: "#accbe1",
         date: "February 2024 - August 2024",
