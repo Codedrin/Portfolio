@@ -24,7 +24,7 @@ export {
     infoman,
     puyobay,
     eunivate,
-    princeTech,
+    princeTech, 
     Cnx,
     build_dev
 
