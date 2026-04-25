@@ -17,8 +17,8 @@ const Navbar = () => {
         </NavLink>
      {/* CV Download Button */}
         <a
-          href="https://drive.google.com/file/d/1uOFGMeUKpRuwg4kxO2ONo6znKFgPy7HK/view?usp=sharing" // Replace with the correct path to your CV file
-          download="Aldrin Rosales.pdf" // This sets the file name for the download
+          href="https://drive.google.com/file/d/11uXqaEhGxsYnFMwjwAwChf3E-i-gKTFC/view?usp=sharing" 
+          download="Aldrin Rosales.pdf" 
         className="blue-gradient_text" 
         >
         Download my  CV
